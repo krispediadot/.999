@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>Video Detail</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="content container">
+    <header class="page-header">
+        <h1>Video Detail</h1>
+    </header>
+    <div class="row">
+        <div class="col-md-16">
+            <div id="player"></div>
+            <video width='1000' controls>
+            <source src='{{ MEDIA_URL }}{{ videofile }}' type='video/mp4'>
+                Your browser does not support the video tag.    
+            </video>
+            <br><br>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    
+</script>
+</html>
