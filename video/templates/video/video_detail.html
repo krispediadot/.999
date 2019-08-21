@@ -1,0 +1,120 @@
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>Video Detail</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+d
+        <section id="play_video">
+            <div class="content container">
+                <header class="page-header">
+                    <h1>Video Detail</h1>
+                </header>
+                <div class="row">
+                    <div class="col-md-16">
+                        <div id="player"></div>
+                        <video width='1000' controls>
+                            <source src='{{ MEDIA_URL }}{{ videofile }}' type='video/mp4'>
+                Your browser does not support the video tag.
+                        </video>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ratio">
+            <div class="content container">
+                <header class="page-header">
+                    <h2>object_ratio</h2>
+                </header>
+                  <div class="row">
+                    <div class="col-md-16">
+                        {% for obj in obj %}
+                            <h5>{{obj}}</h5>
+                        {% endfor %}
+
+                        {% for ratio in ratio%}
+                            <h5>{{ratio}}</h5>
+                        {% endfor %}
+
+                        <br><br>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <br>
+                        <div class="list-grouplist-group" id="list"><li class="list-group-item">
+                            <div class="Object"
+                            </div>
+                            <span class="progress-bar-label list-group-item-heading lead">Paul Mal</span>
+                            <div class="Timeline">
+                                <svg height="10" style="width:100%">
+                                    <line x1="0%" y1="5" x2="100%" y2="5" style="stroke:#AAAAAA;stroke-width:3" />
+                                    <circle cx="{{na}}%" cy="5" r="5" fill="#004165"/>
+                                    <line x1="{{na}}%" y1="5" x2="55%" y2="5" style="stroke:#004165;stroke-width:3" />
+                                    <circle cx="55%" cy="5" r="5" fill="#004165"/>
+                                </svg>
+                                <span class="time" style="margin-left:10%">13:00 (6/May)</span>
+                                <span class="time2" style="margin-left:55%">19:27 (7/May)</span>
+                            </div>
+                        </li>
+                            <li class="list-group-item">
+                                <span class="progress-bar-label list-group-item-heading lead">Jane Doe</span>
+                                <div class="Timeline">
+                                    <svg height="10" style="width:100%">
+                                        <line x1="0%" y1="5" x2="100%" y2="5" style="stroke:#AAAAAA;stroke-width:3" />
+                                        <circle cx="90%" cy="5" r="5" fill="#004165"/>
+                                        <line x1="90%" y1="5" x2="100%" y2="5" style="stroke:#004165;stroke-width:3" />
+                                        <circle cx="100%" cy="5" r="5" fill="#004165"/>
+                                    </svg>
+                                    <span class="time" style="margin-left:90%">13:00 (6/May)</span>
+                                    <span class="time2" style="margin-left:100%">19:27 (7/May)</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="progress-bar-label list-group-item-heading lead">John Doe</span>
+                                <div class="Timeline">
+                                    <svg height="10" style="width:100%">
+                                        <line x1="0%" y1="5" x2="100%" y2="5" style="stroke:#AAAAAA;stroke-width:3" />
+                                        <circle cx="0%" cy="5" r="5" fill="#004165"/>
+                                        <line x1="0%" y1="5" x2="5%" y2="5" style="stroke:#004165;stroke-width:3" />
+                                        <circle cx="5%" cy="5" r="5" fill="#004165"/>
+                                    </svg>
+                                    <span class="time" style="margin-left:0%">13:00 (6/May)</span>
+                                    <span class="time2" style="margin-left:5%">19:27 (7/May)</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="progress-bar-label list-group-item-heading lead">Thomas Phillips</span>
+                                <div class="Timeline">
+                                    <svg height="10" style="width:100%">
+                                        <line x1="0%" y1="5" x2="100%" y2="5" style="stroke:#AAAAAA;stroke-width:3" />
+                                        <circle cx="70%" cy="5" r="5" fill="#004165"/>
+                                        <line x1="70%" y1="5" x2="71%" y2="5" style="stroke:#004165;stroke-width:3" />
+                                        <circle cx="71%" cy="5" r="5" fill="#004165"/>
+                                    </svg>
+                                    <span class="time" style="margin-left:70%">13:00 (6/May)</span>
+                                    <span class="time2" style="margin-left:71%">19:27 (7/May)</span>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</body>
+<script>
+    
+</script>
+</html>
