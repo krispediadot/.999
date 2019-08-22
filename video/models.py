@@ -19,3 +19,12 @@ class Video(models.Model):
 
 	def __str__(self):
 		return self.name + ": " + str(self.videofile)
+
+class Ratio(models.Model):
+	title = models.CharField(max_length=500)
+	timeline = models.CharField(max_length=500)
+	ratio = models.CharField(max_length=500)
+	total_ratio=models.CharField(max_length=500)
+
+	def __str__(self):
+		return self.title
