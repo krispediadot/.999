@@ -4,24 +4,6 @@
 <head>
     <title>Video Detail</title>
     <link rel="stylesheet" href="/static/css/test.css">
-
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript">
-    google.load("visualization", "1", {packages:["corechart"]});
-    google.setOnLoadCallback(drawChart);
-    function drawChart() 
-    {
-        var data = google.visualization.arrayToDataTable(
-            [["Employee","Rating"],["Alcohol",{{ total_obj.alcohol }}],["Boob",{{ total_obj.boob }}],["Cigarette",{{ total_obj.cigarette }}],["Knife",{{ total_obj.knife }}],["Gun",{{ total_obj.gun }}],["Others",{{ total_obj.others }}]]
-        );
-        var options = {
-            title: ""
-        };
-        var chart = new google.visualization.PieChart(document.getElementById("total_ratio"));
-        chart.draw(data, options);
-    }
-</script>
 </head>
 <body>
 <div class="content container">
@@ -140,17 +122,11 @@
           <!--</li>-->
 
         </div>
-         <h1>Total Ratio</h1>
-
-         <div id="total_ratio" style="width: 900px; height: 500px;"></div>
-
-
-         <h4> Alcohol : {{ total_obj.alcohol }}% </h4>
-         <h4> Boob : {{ total_obj.boob }}% </h4>
-         <h4> Cigarette : {{ total_obj.cigarette }}% </h4>
-         <h4> Knife : {{ total_obj.knife }}% </h4>
-         <h4> Gun : {{ total_obj.gun }}% </h4>
-         <h4> Others : {{ total_obj.others }}% </h4>      </div>
+          <h1>Total Ratio</h1>
+          {% for obj, ratio in total_obj.items %}
+          <h4>{{ obj }} : {{ ratio }}%</h4>
+          {% endfor %}
+      </div>
     </div>
   </div>
 </body>
