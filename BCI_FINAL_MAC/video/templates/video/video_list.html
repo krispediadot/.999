@@ -1,0 +1,133 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>영상 등급 판별 보조 시스템</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/css/main.css" />
+		<noscript><link rel="stylesheet" href="/static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon solid major fa-cloud"></span>
+					<h1>Hi, We're <strong>.999</strong><br />
+					Video grading assistance system<br/>
+					</h1>
+					<p>Picker</p>
+					<ul class="actions special">
+						<li><a href="#two" class="button scrolly">S T A R T</a></li>
+					</ul>
+				</div>
+			</section>
+		
+		
+		<!-- Two -->
+			<section id="two" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						
+						<div class="col-6 col-12-medium">
+							<h1>Video Uploader</h1>
+							<a href="/video/new" class="button scrolly">New Video</a>
+							
+							</p>
+							</p>
+							{% for video in video_list %}
+				                <a href="/video/{{ video.id }}">
+				                
+				                    <h4>{{ video.name }}</h4>
+				                </a>
+				            {% endfor %}
+							<br><br>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Adipiscing amet consequat</h2>
+					</header>
+					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="static/images/pic02.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="static/images/pic03.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="static/images/pic04.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Ipsum feugiat consequat?</h2>
+					</header>
+					<p>Sed lacus nascetur ac ante amet sapien.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button wide primary">Sign Up</a></li>
+						<li><a href="#" class="button wide">Learn More</a></li>
+					</ul>
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/jquery.scrolly.min.js"></script>
+			<script src="/static/js/browser.min.js"></script>
+			<script src="/static/js/breakpoints.min.js"></script>
+			<script src="/static/js/util.js"></script>
+			<script src="/static/js/main.js"></script>
+
+	</body>
+</html>
