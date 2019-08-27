@@ -33,7 +33,7 @@ def video_list(request):
 def video_new(request):
 	global learning_check
 
-	form = VideoForm(request.POST, request.FILES)
+	form = VideoForm(request.POST or None, request.FILES or None)
 	if request.method == 'POST':
 		if form.is_valid():
 			form.save()
