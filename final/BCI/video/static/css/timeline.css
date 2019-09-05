@@ -1,0 +1,29 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+
+body {
+  margin: 50px;
+  width:1000px;
+}
+
+.Timeline {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.time {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  color: #9E9E9E;
+}
+
+.time2 {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: -20px;
+  color: #9E9E9E;
+}
