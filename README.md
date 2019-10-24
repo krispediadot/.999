@@ -43,10 +43,11 @@
     - 손과 같은 다른 것이 일부만 가리는 경우에는 같이 포함하여 마스킹함
     `가슴의 반 이상이 가려진 경우`
     - 옷이나, 손 등으로 가슴의 반 이상이 가려진 경우에는 그것들을 제외하고 마스킹함  
-  - 알코올<br>
+  - 주류<br>
 #### 3-2. 모델 학습
 ##### (1) 모델 선정
-##### (2) 모델 최적화
+##### (2) 모델 학습 방법
+##### (3) 모델 최적화
   ![hyperparameter](https://github.com/krispedia/.999/blob/master/_ect/annotation.jpg)
 #### 3-3. 웹사이트 구현
   ![service](https://github.com/krispedia/.999/blob/master/_ect/service.jpg)
