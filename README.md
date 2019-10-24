@@ -1,14 +1,14 @@
-##  [빅데이터 청년인재 BIG X CAMPUS 프로젝트]
+#  [빅데이터 청년인재 BIG X CAMPUS 프로젝트]
 #### 프로젝트명: 영상 등급 분류 보조 시스템(Picker) 
 #### 팀명: .999 (9할 9푼 9리)
 --- 
 
 ### 1. 목적
-  DDDM(Data Driven Decision Making)을 통해 객관적으로 영화 등급을 분류할 수 있게 할것
+  DDDM(Data Driven Decision Making)을 통해 객관적으로 영화 등급을 분류할 수 있게 할것  
   자동화 시스템을 통해 영상 컨텐츠 증가에 따른 심사 인력 부족 현상을 해결할 것
 
 ### 2. 주요 기능
-  영상 내 유해 요소 감지
+  영상 내 유해 요소 감지  
   영상 내 유해 요소 타임라인, 비중 정보 제공
 
 ### 3. 진행 과정
@@ -18,7 +18,7 @@
   ![dataset](https://github.com/krispedia/.999/blob/master/_ect/dataset.jpg)  
 
 ##### (2) 데이터 전처리
-  전처리 도구 : VIA
+  전처리 도구 : [VIA](http://www.robots.ox.ac.uk/~vgg/software/via/)
 
   <전처리 기준>
   - 담배<br>
