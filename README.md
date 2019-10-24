@@ -19,7 +19,7 @@
 
 ##### (2) 데이터 전처리
   전처리 도구 : [VIA](http://www.robots.ox.ac.uk/~vgg/software/via/)
-
+  ![annotation](https://github.com/krispedia/.999/blob/master/_ect/annotation.jpg)
   <전처리 기준>
   - 담배<br>
     담배를 입에 물고 있는 경우
