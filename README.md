@@ -48,7 +48,7 @@
 ##### (1) 모델 선정
 ##### (2) 모델 학습 방법
 ##### (3) 모델 최적화
-  ![hyperparameter](https://github.com/krispedia/.999/blob/master/_ect/annotation.jpg)
+  ![hyperparameter](https://github.com/krispedia/.999/blob/master/_ect/hyperparameter.jpg)
 #### 3-3. 웹사이트 구현
   ![service](https://github.com/krispedia/.999/blob/master/_ect/service.jpg)
 ### 4. 결과물
